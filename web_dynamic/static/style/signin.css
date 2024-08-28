@@ -1,9 +1,12 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../images/backgroud.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: 0%;
+    height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .con {
@@ -19,10 +22,14 @@ body {
 }
 
 .con form {
+    display: flex;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.9);
     padding: 50px;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
 }
 
 input[type=email], input[type=text], input[type=password], select {
@@ -41,28 +48,35 @@ input[type='email'], input[type=text]:focus, input[type=password]:focus, select:
     outline: none;
 }
 
-#Cancel, #Signup {
-    padding: 15px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+h2 {
+    color: #33BC27;
 }
 
-#Cancel {
+
+.clearfix {
+    display: flex;
+    justify-content: center;
+}
+
+#forgot_password {
     background-color: white;
     color: #33BC27;
-    border: 2px solid #33BC27;
-}
-
-#Signup {
-    background-color: #33BC27;
-    color: white;
-    width: 50%;
+    width: 25%; 
     margin-top: 10px;
 }
 
-#Cancel:hover, #Signup:hover {
-    opacity: 0.9;
+#login {
+    background-color: #33BC27;
+    color: white;
+    width: 20%; 
+    margin-top: 10px;
+}
+
+#forgot_password, #login {
+    padding: 1px 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/signin.css">
+        <link rel="icon" href="images/logo.png">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <div class="con">
+            <form action="action.js" style="border: 1px solid #fff;">
+                <div class="container">
+                    <h2>Log In</h2>
+                    <p>If you don't have an account click <a href="inscription.html">here</a></p>
+                    <input type="email" placeholder="Email" name="email" required>
+
+                    <input type="password" placeholder="Password" name="psw" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                    <div class="clearfix">
+                        <button id="forgot_password" type="button">Forgot Password</button>
+                        <button id="login" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
