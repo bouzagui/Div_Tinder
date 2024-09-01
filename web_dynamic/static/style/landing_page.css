@@ -82,7 +82,7 @@ h3 {
     color: white;
 }
 
-.chooseus {
+#chooseus {
     display: flex;
     flex-direction: column;
     justify-content: center;
