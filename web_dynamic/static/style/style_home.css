@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     background: linear-gradient(to right, #ffeeee, #ddefbb);
     font-family: Arial, sans-serif;
@@ -5,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Header and Navigation */
 .header-flexbox {
     display: flex;
     justify-content: space-between;
@@ -43,11 +45,13 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Logo */
 .logo {
     width: 45px;
     height: 50px;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -69,10 +73,10 @@ header {
     color: #666;
 }
 
+/* Intro Section */
 #intro {
-    display: flex;
-    justify-content: center;
-    color: rgb(102, 134, 216);
+    text-align: center;
+    padding: 15px;
 }
 
 
@@ -104,7 +108,7 @@ header {
 .categories {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 200px;
     flex-wrap: wrap;
 }
 
@@ -121,7 +125,7 @@ header {
 }
 
 .category img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
     margin-bottom: 20px;
 }
@@ -239,4 +243,70 @@ footer a {
     align-items: center;
     width: 100%;
     height: 10px;
+}
+
+/* Contact Section Styles */
+section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.teamcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    text-align: center;
+}
+
+.teamcard img.iconimg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.teamcard h3.name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.teamicon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.teamicon a {
+    margin: 0 0.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.teamicon a:hover {
+    transform: scale(1.1);
+}
+
+.teamicon img.img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teamcard {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    .teamicon img.img {
+        width: 28px;
+        height: 28px;
+    }
 }
